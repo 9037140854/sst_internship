@@ -1,0 +1,54 @@
+
+<html>
+        <head>
+            <link rel="stylesheet"type="text/css"href="assi2.css">
+        </head>
+        <body>
+    
+                <nav>
+                    <div class="menu-item"> <a href= "assi2.html" >Home</a></div>
+                    <div class="menu-item"> <a href= "login.html" >Login</a></div>
+                    <div class="menu-item"> <a href= "reg.html" >Registor</a></div>
+                    <div class="menu-item"> <a href="bymarket.html" >Buy Product</a>
+                   </nav>
+                <header>
+                    <img src="supra.jpeg">
+                </header>
+   <table style="width:50%"border="0"bgcolor="white">
+    <tr>
+        <th>username</th>
+        <th> <input type="text" name="first name" id="texta"></th>
+    </tr>
+    <tr>
+        <th> password</th>
+        <th> <input type="password" name="password" id="textb"></th>
+    </tr>
+    <td></td>
+    <td> <input type="submit" onclick="sum()" value="login"></td>
+</table>
+<script>
+        function sum()
+        {
+            var first=document.getElementById("texta").value
+            var second=document.getElementById("textb").value
+            if(first=="admin"&& second=='123')
+            {
+                alert("you have succesfully logged in");
+                window.location="assi2.html"//redirect to another webpage
+            }
+            else
+            {
+                alert("incorrect username or password");
+            }
+        }
+
+
+    </script>
+<div></div>
+<footer>     
+<p> desingned and devoleped by shijas</p>
+<p>quick link</p>
+</footer>
+</body>
+</html>
+    

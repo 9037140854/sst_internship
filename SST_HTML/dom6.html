@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            function sum()
+            {
+                var first=document.getElementById("texta").value;
+                var second=document.getElementById("textb").value;
+                if (first=="admin"&&second=='123')
+                {
+                    alert("you have succesully loged in");//despley alert box
+                    windoe.location='home.html';//redirect to another web page
+                }
+                else
+                {
+                    alert("incorrect username or password");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label>username</label>
+            <input type="text" name="usename">
+            <label>password</label>
+            <input type="text" name="password">
+            <input type="submit" value="login">
+            <div></div>
+        </form>
+
+    </body>
+</html>

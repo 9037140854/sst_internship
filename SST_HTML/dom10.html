@@ -1,0 +1,69 @@
+<html>
+    <head>
+
+        <script>
+            function validate(){
+                var name=document.getElementById("name").value;
+                var letters=/^[a-zA-z\s]+$/;
+                if(name=="")
+                {
+                    //document.write("enter name")
+                    document.getElementById("l1").innerHTML="enter name";
+                    document.getElementById("l2").innerHTML="enter age";
+                    document.getElementById("l3").innerHTML="enter password";
+                }
+                else if(letters.test(name)==false)
+                {
+                    document.getElementById("l1").innerHTML="Enter correct alphabets";
+                }
+                if(password==""){
+                    
+                    document.getElementById("l3").innerHTML="less than 8 caracters";
+
+                }
+                else(letters.test(name)==false)
+                {
+                    document.getElementById("l3").innerHTML="enter password";
+                }
+
+            }
+        </script>
+    </head>
+
+    <body>
+        <form>
+            <table border="0">
+                <td>
+                    name
+                </td>
+                <td>
+                    <input type="text"name="name" id="name"><br>
+                    
+                    <label id="l1"></label>
+
+                    <label style="color:red"id="l1"></label>
+           
+            </td>
+            <td>
+                    age
+                </td>
+                <td>
+                    <input type="text"name="name" id="name"><br>
+
+                    <label style="color:red"id="l2"></label>
+                    </td>
+
+               <td>
+                    password
+                </td>
+
+             <td>
+                    <input type="text"name="name" id="name"><br>
+                    <label style="color:red"id="l3"></label>
+                    <td> <input type="button"value="submit"onclick="validate()"></td>
+                    </td>
+
+            </table>
+        </form>
+    </body>
+    </html>

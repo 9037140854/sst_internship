@@ -1,0 +1,45 @@
+header{
+    background-color:black;
+    display:block;
+    }
+    nav{
+        display:flex;
+        gap:20px;
+        padding-top:10px;
+        float:right;
+        margin-right:80px;
+    }
+    .menu-item{
+        display:block;
+        background-color:gold;
+        border-radius:6px;
+    }
+    .menu-item a{
+        color:white;
+        text-decoration:none;
+        padding:10px 16px;
+        display:block;
+    }
+footer{
+    background-color:black;
+    color:white;
+}
+div{
+    min-height: 30;
+}
+table{
+    background-color:blueviolet;
+    border-radius:10px;
+    height:30%;
+    width:30%;
+     text-align:center;
+     margin-left:50%;
+     margin-top:10%;   
+}
+button{
+    border-radius:25px;
+    background-color:red;
+    height:50%;
+    width:25%;
+}
+
